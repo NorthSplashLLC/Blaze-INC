@@ -7,8 +7,8 @@ export default function About() {
     <>
       <PageHero
         eyebrow="ABOUT B.L.A.Z.E."
-        title="A youth-centered organization built to open doors."
-        text="B.L.A.Z.E. stands for Black Leaders Advocating for Zealous Equity. Our purpose is to help young people and underserved communities access the relationships, resources and opportunities that make long-term success possible."
+        title="For The youth By the Youth."
+        text="B.L.A.Z.E. stands for Black Leaders Advocating for Zealous Equity. We are a youth-centered organization helping young people and underserved communities access the relationships, resources and opportunities that make long-term success possible."
       />
 
       <section className="section container two-col">

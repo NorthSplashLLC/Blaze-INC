@@ -234,3 +234,210 @@ button, input, textarea { font: inherit; }
   .footer-top > div:first-child { grid-column:auto; }
   .footer-bottom { flex-direction:column; }
 }
+
+
+/* --- 2026 refinement pass: slogan, parallax imagery, polish --- */
+:focus-visible {
+  outline: 3px solid var(--gold-2);
+  outline-offset: 4px;
+}
+
+::selection {
+  background: var(--gold-2);
+  color: #111;
+}
+
+.slogan-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 18px;
+  padding: 8px 13px;
+  border: 1px solid rgba(243,214,135,.28);
+  border-radius: 999px;
+  background: rgba(216,166,74,.08);
+  color: var(--gold-2);
+  font-weight: 800;
+  font-size: .82rem;
+  letter-spacing: .025em;
+}
+
+.hero-logo-panel {
+  position: relative;
+  isolation: isolate;
+}
+
+.hero-logo-panel::after {
+  content: "";
+  position: absolute;
+  inset: -18px;
+  z-index: -1;
+  border-radius: 54px;
+  background: radial-gradient(circle at 50% 50%, rgba(216,166,74,.24), transparent 70%);
+  filter: blur(18px);
+}
+
+.program-card,
+.value-card,
+.involve-card,
+.contact-card,
+.impact-cards article {
+  box-shadow: 0 12px 36px rgba(22,18,11,.035);
+}
+
+.parallax-band,
+.parallax-break,
+.parallax-light,
+.page-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.parallax-band::before,
+.parallax-break::before,
+.parallax-light::before,
+.page-hero::before {
+  content: "";
+  position: absolute;
+  inset: -8%;
+  z-index: -2;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transform: scale(1.08);
+}
+
+.page-hero::before {
+  background-image: linear-gradient(rgba(9,10,13,.86), rgba(9,10,13,.94)), url('/assets/blaze-gold-background.jpeg');
+  opacity: .62;
+}
+
+.parallax-mission::before {
+  background-image: linear-gradient(rgba(9,10,13,.91), rgba(9,10,13,.94)), url('/assets/blaze-mission-background.jpeg');
+}
+
+.parallax-programs::before {
+  background-image: linear-gradient(rgba(9,10,13,.88), rgba(9,10,13,.94)), url('/assets/blaze-programs-background.jpeg');
+}
+
+.parallax-gold::before {
+  background-image: linear-gradient(rgba(240,237,229,.88), rgba(240,237,229,.94)), url('/assets/blaze-gold-background.jpeg');
+  filter: saturate(.55);
+}
+
+.parallax-break {
+  min-height: 560px;
+  display: grid;
+  place-items: center;
+  color: white;
+}
+
+.parallax-break::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(9,10,13,.28), transparent 45%, rgba(9,10,13,.28));
+}
+
+.slogan-feature {
+  max-width: 850px;
+  padding: 58px;
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 30px;
+  background: rgba(9,10,13,.68);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 30px 80px rgba(0,0,0,.28);
+}
+
+.slogan-feature h2 {
+  color: white;
+  font-size: clamp(3.2rem, 7vw, 6.8rem);
+  line-height: .93;
+  margin-bottom: 24px;
+}
+
+.slogan-feature h2 span {
+  color: var(--gold-2);
+}
+
+.slogan-feature > p:last-child {
+  max-width: 680px;
+  margin: 0;
+  color: #d3d7de;
+  font-size: 1.08rem;
+}
+
+.footer-slogan {
+  color: var(--gold-2) !important;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 18px;
+}
+
+.site-header,
+.button,
+.nav-cta,
+.program-card,
+.value-card,
+.involve-card,
+.contact-card,
+.text-link,
+.desktop-nav a {
+  transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease, color .25s ease, border-color .25s ease;
+}
+
+.button:hover,
+.nav-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(216,166,74,.22);
+}
+
+.button-ghost:hover {
+  background: rgba(255,255,255,.07);
+  border-color: rgba(255,255,255,.30);
+  box-shadow: none;
+}
+
+.text-link:hover,
+.program-card a:hover,
+.involve-card a:hover,
+.contact-card a:hover {
+  color: #b38531;
+  transform: translateX(3px);
+}
+
+@media (max-width: 900px) {
+  .parallax-band::before,
+  .parallax-break::before,
+  .parallax-light::before,
+  .page-hero::before {
+    background-attachment: scroll;
+    transform: scale(1.03);
+  }
+}
+
+@media (max-width: 700px) {
+  .parallax-break { min-height: 500px; }
+  .slogan-feature { padding: 34px 24px; border-radius: 22px; }
+  .slogan-feature h2 { font-size: clamp(3rem, 16vw, 5rem); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .parallax-band::before,
+  .parallax-break::before,
+  .parallax-light::before,
+  .page-hero::before {
+    background-attachment: scroll;
+  }
+}

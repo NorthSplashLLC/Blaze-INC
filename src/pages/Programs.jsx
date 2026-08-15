@@ -16,7 +16,7 @@ export default function Programs() {
         </div>
       </section>
 
-      <section className="section dark-band">
+      <section className="section dark-band parallax-band parallax-programs">
         <div className="container simple-callout">
           <p className="eyebrow">HOW SUPPORT CAN LOOK</p>
           <h2>From a first conversation to a real opportunity.</h2>

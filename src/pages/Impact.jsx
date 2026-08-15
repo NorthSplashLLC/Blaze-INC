@@ -22,7 +22,7 @@ export default function Impact() {
         </div>
       </section>
 
-      <section className="section soft-band">
+      <section className="section soft-band parallax-light parallax-gold">
         <div className="container">
           <div className="section-heading split-heading">
             <div>

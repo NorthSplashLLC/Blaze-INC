@@ -72,6 +72,7 @@ export default function Layout({ children }) {
               </div>
             </div>
             <p>Creating pathways to education, leadership, opportunity and stronger communities across Northeast Ohio.</p>
+            <p className="footer-slogan">For The youth By the Youth.</p>
           </div>
 
           <div>
@@ -88,7 +89,7 @@ export default function Layout({ children }) {
         </div>
         <div className="footer-bottom">
           <span>© {new Date().getFullYear()} B.L.A.Z.E. Incorporated LLC</span>
-          <span>Built to help youth lead, learn and thrive.</span>
+          <span>For The youth By the Youth.</span>
         </div>
       </footer>
     </div>

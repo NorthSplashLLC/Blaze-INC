@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, GraduationCap, Users, BriefcaseBusiness, HeartHandshake, Megaphone, Sparkles } from 'lucide-react'
+import { ArrowRight, Sparkles, Flame } from 'lucide-react'
 import ProgramCard from '../components/ProgramCard'
 import { programs, impactItems } from '../content'
 
@@ -10,6 +10,7 @@ export default function Home() {
         <div className="hero-grid container">
           <div className="hero-copy">
             <p className="eyebrow">BLACK LEADERS ADVOCATING FOR ZEALOUS EQUITY</p>
+            <div className="slogan-pill"><Flame size={16}/> For The youth By the Youth.</div>
             <h1>Empowering youth to <span>lead boldly</span> and build what comes next.</h1>
             <p className="lead">
               B.L.A.Z.E. Incorporated LLC connects young people and underserved communities across Northeast Ohio with education, mentorship, career exposure, essential resources and opportunities to lead.
@@ -19,7 +20,7 @@ export default function Home() {
               <Link className="button button-ghost" to="/programs">Explore programs</Link>
             </div>
             <div className="hero-trust">
-              <span><Sparkles size={16}/> Youth-centered</span>
+              <span><Sparkles size={16}/> For The youth By the Youth.</span>
               <span>Akron • Summit County • Northeast Ohio</span>
             </div>
           </div>
@@ -57,7 +58,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section dark-band">
+      <section className="section dark-band parallax-band parallax-mission">
         <div className="container impact-layout">
           <div className="impact-intro">
             <p className="eyebrow">WHY B.L.A.Z.E.</p>
@@ -72,6 +73,16 @@ export default function Home() {
                 <div><h3>{title}</h3><p>{text}</p></div>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section parallax-break parallax-programs">
+        <div className="container">
+          <div className="slogan-feature">
+            <p className="eyebrow">OUR SLOGAN</p>
+            <h2>For The Youth<br/><span>By The Youth.</span></h2>
+            <p>B.L.A.Z.E. is built around youth voice, youth leadership and the belief that young people should help shape the programs and opportunities created for them.</p>
           </div>
         </div>
       </section>

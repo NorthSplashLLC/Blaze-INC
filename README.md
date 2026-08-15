@@ -41,3 +41,11 @@ A `vercel.json` file is already included so the React Router pages work when ref
 - Instagram: `@b.l.a.z.e_foundation`
 - Email: `blazefoundation.4success@gmail.com`
 - Service area: Akron / Summit County / Northeast Ohio
+
+## Refinement update
+
+- Added official slogan: **For The youth By the Youth.**
+- Added layered/parallax background imagery using historical B.L.A.Z.E. design assets.
+- Added a dedicated slogan feature section.
+- Improved hover states, focus accessibility, mobile behavior and reduced-motion support.
+- Updated page title and description for branding/SEO.
