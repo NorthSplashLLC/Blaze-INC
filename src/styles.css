@@ -441,3 +441,16 @@ button, input, textarea { font: inherit; }
     background-attachment: scroll;
   }
 }
+
+.powered-by {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #c7b17b;
+  font-weight: 700;
+  transition: color .2s ease, transform .2s ease;
+}
+.powered-by:hover {
+  color: #f3d687;
+  transform: translateY(-1px);
+}

@@ -90,6 +90,7 @@ export default function Layout({ children }) {
         <div className="footer-bottom">
           <span>© {new Date().getFullYear()} B.L.A.Z.E. Incorporated LLC</span>
           <span>For The youth By the Youth.</span>
+          <a className="powered-by" href="https://northsplash.shop" target="_blank" rel="noopener noreferrer">Powered By NS Venture Works <ArrowUpRight size={14}/></a>
         </div>
       </footer>
     </div>
